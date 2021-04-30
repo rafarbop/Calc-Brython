@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora Simples</title>
+
+    <script type="text/javascript" src="./brython.js"></script>
+    <script type="text/javascript" src="./brython_stdlib.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css">
+</head>
+
+<body onload="brython()">
+    <section class="hero">
+        <div class="hero-head">
+            <p class="box title is-2 has-text-centered has-background-grey-light has-text-info">
+                Calculadora Simples
+            </p>
+        </div>
+
+        <div class="hero-body">
+            <div class="columns is-centered">
+                <div class="box column has-background-info-dark is-4 ">
+                    <div class="columns is-multiline is-4">
+                        <div class="column is-12 is-full is-variable is-0">
+                            <input type="text" id="display" class="input is-size-3 has-text-right">
+                        </div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="1" class="button is-info is-fullwidth is-size-3">1</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="2" class="button is-info is-fullwidth is-size-3">2</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="3" class="button is-info is-fullwidth is-size-3">3</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="+" class="button is-info is-fullwidth is-size-3">+</button></div>                        
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="4" class="button is-info is-fullwidth is-size-3">4</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="5" class="button is-info is-fullwidth is-size-3">5</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="6" class="button is-info is-fullwidth is-size-3">6</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="-" class="button is-info is-fullwidth is-size-3">-</button></div>                        
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="7" class="button is-info is-fullwidth is-size-3">7</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="8" class="button is-info is-fullwidth is-size-3">8</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="9" class="button is-info is-fullwidth is-size-3">9</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="*" class="button is-info is-fullwidth is-size-3">*</button></div>                        
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="CE" class="button is-info is-fullwidth is-size-3">CE</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="0" class="button is-info is-fullwidth is-size-3">0</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="=" class="button is-info is-fullwidth is-size-3">=</button></div>
+                        <div class="column is-3 has-text-centered has-background-info-dark"><button id="/" class="button is-info is-fullwidth is-size-3">/</button></div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+    <script type="text/python" src="./public/brython/brython.py"></script>
+</body>

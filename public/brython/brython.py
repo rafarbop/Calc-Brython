@@ -10,6 +10,7 @@ result_in_display = False
 
 
 def atualizar_display(list_text):
+    print(list_text)
     global result_in_display
     text_concatenado = ""
     for item in list_text:
@@ -100,7 +101,10 @@ def operation_sum(ev):
             n2_str += item2
         display_history.append(text_display)
         refresh_history(display_history)
-        text_display = [str(float(n1_str)+float(n2_str))]
+        if '.' in n1_str or '.' in n2_str:
+            text_display = [str(float(n1_str)+float(n2_str))]
+        else:
+            text_display = [str(int(n1_str)+int(n2_str))]
         result_in_display = True
         atualizar_display(text_display)
         print("Cálculo Realizado+")
@@ -116,7 +120,10 @@ def operation_sum(ev):
             n2_str += item2
         display_history.append(text_display)
         refresh_history(display_history)
-        text_display = [str(float(n1_str)-float(n2_str))]
+        if '.' in n1_str or '.' in n2_str:
+            text_display = [str(float(n1_str)-float(n2_str))]
+        else:
+            text_display = [str(int(n1_str)-int(n2_str))]
         result_in_display = True
         atualizar_display(text_display)
         print("Cálculo Realizado-")
@@ -132,7 +139,10 @@ def operation_sum(ev):
             n2_str += item2
         display_history.append(text_display)
         refresh_history(display_history)
-        text_display = [str(float(n1_str)*float(n2_str))]
+        if '.' in n1_str or '.' in n2_str:
+            text_display = [str(float(n1_str)*float(n2_str))]
+        else:
+            text_display = [str(int(n1_str)*int(n2_str))]
         result_in_display = True
         atualizar_display(text_display)
         print("Cálculo Realizado*")
@@ -148,7 +158,10 @@ def operation_sum(ev):
             n2_str += item2
         display_history.append(text_display)
         refresh_history(display_history)
-        text_display = [str(float(n1_str)/float(n2_str))]
+        if '.' in n1_str or '.' in n2_str or (int(n1_str)%int(n2_str))!=0:
+            text_display = [str(round(float(n1_str)/float(n2_str),10))]
+        else:
+            text_display = [str(int((int(n1_str)/int(n2_str))))]
         result_in_display = True
         atualizar_display(text_display)
         print("Cálculo Realizado/")

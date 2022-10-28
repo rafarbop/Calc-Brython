@@ -1,4 +1,5 @@
 # Calc Brython
+Aplicação de uma calculadora desenvolvida em Python
  
 Calculadora simples desenvolvida em Python para Web com [Brython](https://brython.info)
 
